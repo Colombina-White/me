@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+section {
+    padding: 40px 20px;
+}
+.nav-link {
+    position: relative;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.badge {
+    width: 30px;   /* 控制徽章大小 */
+    height: 30px;
+    cursor: pointer;
+    background-color: #6883e5;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.profile-card {
+    display: flex;
+    background-color: #7592db; /* Discord 深灰 */
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    max-width: 600px;
+    margin: 20px; /* 改成靠左 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    justify-content: space-between; /* 左右分開 */
+}
+.right-side {
+    display: flex;
+    flex-direction: column; /* 垂直排列按鈕 */
+    gap: 10px; /* 按鈕之間距離 */
+    align-items: flex-start; /* 靠左對齊，也可以改成 center */
+}
+.right-side a {
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.yt-button {
+    padding: 10px 20px;
+    background-color: #FF0000; /* YouTube 紅色 */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.yt-button:hover {
+    transform: scale(1.05);
+    background-color: #cc0000;
+}
+.ig-button {
+    background-color: #E1306C;
+}
+.ig-button:hover {
+    background-color: #c1275a;
+    transform: scale(1.05);
+}
+
+.tw-button {
+    background-color: #9146FF;
+}
+.tw-button:hover {
+    background-color: #772EDC;
+    transform: scale(1.05);
+}
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #b15ee9; /* Discord 紫藍色邊框 */
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.username {
+    font-size: 14px;
+    color: #b9bbbe;
+    margin: 5px 0;
+}
+
+.tag {
+    background-color: #7289da;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.badges {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* 徽章間距 */
+}
+
+.badge {
+    display: inline-block;
+    background-color: #6795f0;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 12px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.badge img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* 圓形徽章 */
+    transition: transform 0.2s;
+}
+
+/*照片*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 🔹 圖片排列 */
+.popup-content {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popup-img {
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+}
+.popup-img:hover {
+    transform: scale(1.1);
+}
+/* 🔹 關閉按鈕 */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
