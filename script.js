@@ -33,7 +33,7 @@ projects.forEach((proj, index) => {
 });
 
 // 點擊查看詳情 → 顯示 popup
-document.querySelectorAll(".yt-button").forEach(btn => {
+document.querySelectorAll(".project-card .yt-button").forEach(btn => {
     btn.addEventListener("click", e => {
         e.preventDefault();
         const index = e.target.getAttribute("data-index");
@@ -51,4 +51,5 @@ document.querySelectorAll(".yt-button").forEach(btn => {
 
 // 關閉彈窗
 closeBtn.onclick = () => popup.style.display = "none";
+
 window.onclick = e => { if (e.target === popup) popup.style.display = "none"; };
