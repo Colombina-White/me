@@ -16,7 +16,6 @@ const popup = document.getElementById("popup");
 const popupImgs = popup.querySelectorAll(".popup-img");
 const closeBtn = popup.querySelector(".close");
 
-// 動態生成作品卡片
 projects.forEach((proj, index) => {
     const div = document.createElement("div");
     div.className = "profile-card project-card";
@@ -32,7 +31,6 @@ projects.forEach((proj, index) => {
     projectList.appendChild(div);
 });
 
-// 點擊查看詳情 → 顯示 popup
 document.querySelectorAll(".project-card .yt-button").forEach(btn => {
     btn.addEventListener("click", e => {
         e.preventDefault();
@@ -51,4 +49,5 @@ document.querySelectorAll(".project-card .yt-button").forEach(btn => {
 
 // 關閉彈窗
 closeBtn.onclick = () => popup.style.display = "none";
+
 window.onclick = e => { if (e.target === popup) popup.style.display = "none"; };
