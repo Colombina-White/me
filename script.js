@@ -47,7 +47,7 @@ document.querySelectorAll(".project-card .yt-button").forEach(btn => {
     });
 });
 
-// 關閉彈窗
 closeBtn.onclick = () => popup.style.display = "none";
 
 window.onclick = e => { if (e.target === popup) popup.style.display = "none"; };
+
