@@ -26,7 +26,7 @@ section {
 }
 
 .badge {
-    width: 30px;   /* 控制徽章大小 */
+    width: 30px;  
     height: 30px;
     cursor: pointer;
     background-color: #6883e5;
@@ -39,20 +39,20 @@ section {
 }
 .profile-card {
     display: flex;
-    background-color: #7592db; /* Discord 深灰 */
+    background-color: #7592db;
     padding: 20px;
     border-radius: 15px;
     color: white;
     max-width: 600px;
-    margin: 20px; /* 改成靠左 */
+    margin: 20px; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    justify-content: space-between; /* 左右分開 */
+    justify-content: space-between; 
 }
 .right-side {
     display: flex;
-    flex-direction: column; /* 垂直排列按鈕 */
-    gap: 10px; /* 按鈕之間距離 */
-    align-items: flex-start; /* 靠左對齊，也可以改成 center */
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: flex-start; 
 }
 .right-side a {
     padding: 10px 20px;
@@ -64,7 +64,7 @@ section {
 }
 .yt-button {
     padding: 10px 20px;
-    background-color: #FF0000; /* YouTube 紅色 */
+    background-color: #FF0000;
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -95,7 +95,7 @@ section {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #b15ee9; /* Discord 紫藍色邊框 */
+    border: 3px solid #b15ee9;
 }
 
 .profile-info {
@@ -130,7 +130,7 @@ section {
 .badges {
     margin-top: 10px;
     display: flex;
-    gap: 10px; /* 徽章間距 */
+    gap: 10px;
 }
 
 .badge {
@@ -145,11 +145,10 @@ section {
 .badge img {
     width: 100%;
     height: 100%;
-    border-radius: 50%; /* 圓形徽章 */
+    border-radius: 50%; 
     transition: transform 0.2s;
 }
 
-/*照片*/
 .popup {
     display: none;
     position: fixed;
@@ -164,7 +163,6 @@ section {
     flex-direction: column;
 }
 
-/* 🔹 圖片排列 */
 .popup-content {
     display: flex;
     gap: 10px;
@@ -180,7 +178,6 @@ section {
 .popup-img:hover {
     transform: scale(1.1);
 }
-/* 🔹 關閉按鈕 */
 .close {
     position: absolute;
     top: 20px;
@@ -188,4 +185,5 @@ section {
     color: white;
     font-size: 30px;
     cursor: pointer;
+
 }
